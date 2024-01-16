@@ -64,15 +64,9 @@ const App = () => {
     }
   };
 
-  const openModalHandler = (modalId) => {
-    const modal = document.getElementById(modalId);
-    modal.showModal();
-  };
+  
 
-  const closeModalHandler = (modalId) => {
-    const modal = document.getElementById(modalId);
-    modal.close();
-  };
+  
 
   return (
     <>
@@ -95,8 +89,11 @@ const App = () => {
             <li className="hover-link nav-item" id="contact">
               <a href="#page4">Contact Us</a>
             </li>
+
+
             <button className="login flex open-button">Login/Register</button>
             <div className="box">
+              
               <dialog className="modal" id="modal">
                 <button className="close-button">
                   <ion-icon name="close-circle"></ion-icon>
@@ -175,7 +172,7 @@ const App = () => {
         </button>
       </div>
       <div className="next">Total Number of Cameras Registered: 300</div>
-        <button onClick={() => openModalHandler('yourModalId')}>Open Modal</button>
+        
       </nav>
       <main>
       <div id="google_translate_element"></div>
@@ -451,7 +448,7 @@ const App = () => {
           </div>
         </div>
       </div>
-        <button onClick={() => closeModalHandler('yourModalId')}>Close Modal</button>
+        
       </main>
     </>
   );

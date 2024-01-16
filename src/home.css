@@ -318,19 +318,19 @@ nav {
 
 /* -----------------home---------------------- */
 #page1 {
-  height: 90%;
+  height: auto; /* Set height to auto for dynamic content */
 }
 
 .slider {
   margin-top: 4%;
-  width: 99.6vw;
-  height: 500px;
+  width: 100%; /* Adjust width for responsiveness */
+  max-width: 99.6vw; /* Set max-width for better responsiveness */
+  height: auto; /* Set height to auto for dynamic content */
   overflow: hidden;
 }
 
 .slides {
   width: 500%;
-  height: 500px;
   display: flex;
 }
 
@@ -344,21 +344,22 @@ nav {
 }
 
 .slide img {
-  width: 99.7vw;
-  height: 500px;
+  width: 100%; /* Adjust width for responsiveness */
+  height: 60%; /* Set height to auto for dynamic content */
   filter: brightness(80%);
 }
 
 .navigation-manual {
-  position: absolute;
-  width: 800px;
+  position: relative;
+  width: 80%; /* Adjust width for responsiveness */
+  max-width: 800px; /* Set max-width for better responsiveness */
   margin-top: -40px;
   display: flex;
   justify-content: center;
 }
 
 .manual-btn {
-  margin-right: -140%;
+  margin-right: -14%; /* Adjust margin for better spacing */
   border: 2px solid white;
   padding: 5px;
   border-radius: 10px;
@@ -367,7 +368,7 @@ nav {
 }
 
 .manual-btn:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 2%; /* Adjust margin for better spacing */
 }
 
 .manual-btn:hover {
@@ -393,13 +394,14 @@ nav {
 .navigation-auto {
   position: absolute;
   display: flex;
-  width: 800px;
+  width: 80%; /* Adjust width for responsiveness */
+  max-width: 800px; /* Set max-width for better responsiveness */
   justify-content: center;
   margin-top: 460px;
 }
 
 .navigation-auto div {
-  margin-right: -140%;
+  margin-right: -14%; /* Adjust margin for better spacing */
   border: 2px solid white;
   padding: 5px;
   border-radius: 10px;
@@ -407,7 +409,7 @@ nav {
 }
 
 .navigation-auto div:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 2%; /* Adjust margin for better spacing */
 }
 
 #radio1:checked ~ .navigation-auto .auto-btn1 {
@@ -428,22 +430,24 @@ nav {
 
 .logo {
   margin-top: 3vh;
-  margin-left: 17vw;
+  margin-left: 3vw; /* Adjust margin for better spacing */
 }
 
 .logo img {
-  width: 80%;
+  width: 70%; /* Adjust width for responsiveness */
 }
+
 
 /* -------------------about----------------------- */
 #page2 {
   padding: 10vh 0;
-  height: 135vh;
+  height: auto; /* Set height to auto for dynamic content */
 }
 
 .row {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start; /* Align items to the start */
   flex-wrap: wrap;
   margin-top: 2%;
 }
@@ -461,8 +465,8 @@ nav {
 }
 
 .col2 {
-  flex-basis: 75%;
-  margin-left: -500px;
+  flex-basis: 58%; /* Adjust the flex-basis for better spacing */
+  margin-left: 2%; /* Add margin for better separation from col1 */
 }
 
 h1 {
@@ -474,31 +478,31 @@ h1 {
 
 .overlay p {
   margin-top: 2%;
-  margin-left: 20vw;
-  width: 60%;
+  margin-left: 5%; /* Adjust the margin for better positioning */
+  width: 90%; /* Adjust the width for better responsiveness */
 }
 
 .vdo {
-  width: 1140px;
-  height: 641.25px;
-  margin-left: 20%;
+  width: 100%; /* Adjust width for responsiveness */
+  height: 550px; /* Adjust height for responsiveness */
+  margin-left: 0;
   margin-top: 4%;
   border-radius: 1rem;
 }
 
 /* -------------------faqs----------------------- */
+#page3 h1 {
+  padding-top: 1%;
+}
+
 #page3 {
-  margin-top: 10%;
-  height: 90vh;
+   /* Adjust margin for better positioning */
+  height: auto; /* Set height to auto for dynamic content */
   text-align: center;
 }
 
-#page3 h1 {
-  padding-top: 7.5%;
-}
-
 .faq {
-  margin: 1rem 20%;
+  margin: 1rem 5%; /* Adjust margin for better spacing */
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -531,7 +535,7 @@ h1 {
 }
 
 .panel {
-  padding: 0 2rem 2.5rem 2rem;
+  padding: 0 2.5rem 2.5rem 2.5rem; /* Adjust padding for better spacing */
   background-color: white;
   overflow: hidden;
   background-color: #11ac1c12;
@@ -544,6 +548,7 @@ h1 {
   line-height: 1.4;
   text-align: left;
 }
+
 
 /* --------------------contact us------------------------------- */
 #page4 {
