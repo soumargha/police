@@ -50,6 +50,7 @@ nav {
   z-index: 2147483646;
   left: 0;
   right: 0;
+  
 }
 
 .flex {
@@ -73,7 +74,7 @@ nav {
 }
 
 .nav-links {
-  margin-right: -50%;
+  margin-right: 0%;
 }
 
 .nav-links ul {
@@ -102,6 +103,8 @@ nav {
   font-size: 1rem;
   font-family: "Poppins";
   margin-right: -4rem;
+  display: flex;
+  justify-content: center;
 }
 
 .login:hover {
@@ -340,6 +343,7 @@ nav {
 
 .slide {
   width: 20%;
+  height: 30%;
   transition: 2s;
 }
 
@@ -429,7 +433,7 @@ nav {
 }
 
 .logo {
-  margin-top: 3vh;
+  margin-top: 6vh;
   margin-left: 3vw; /* Adjust margin for better spacing */
 }
 
@@ -440,8 +444,14 @@ nav {
 
 /* -------------------about----------------------- */
 #page2 {
-  padding: 10vh 0;
+  padding: 15% 5% ;
   height: auto; /* Set height to auto for dynamic content */
+}
+
+.logo img {
+  width: 80%; /* Increase the width of the logo */
+  margin: 0 auto; /* Center the logo */
+  display: block; /* Ensure proper centering */
 }
 
 .row {
@@ -467,6 +477,10 @@ nav {
 .col2 {
   flex-basis: 58%; /* Adjust the flex-basis for better spacing */
   margin-left: 2%; /* Add margin for better separation from col1 */
+}
+
+.soumargha{
+  align-items: center;
 }
 
 h1 {
@@ -701,6 +715,7 @@ form .btn2:hover {
   justify-content: space-around;
   align-items: center;
   text-align: left;
+  min-width: 80vw;
 }
 
 .c2 {
@@ -742,7 +757,7 @@ form .btn2:hover {
 @media only screen and (max-width: 1024px) {
   /* -----------------navbar---------------------- */
   .nav-links {
-    margin-right: -35%;
+    margin-right: 0%;
   }
 
   .nav-links ul {
@@ -755,6 +770,7 @@ form .btn2:hover {
 
   .login {
     margin-right: -1rem;
+    display: flex;
   }
 
   .modal {
@@ -813,6 +829,9 @@ form .btn2:hover {
   .slider {
     margin-top: 5%;
   }
+  #slider{
+    margin-bottom: 10px;
+  }
 
   .manual-btn {
     margin-right: -22%;
@@ -835,13 +854,18 @@ form .btn2:hover {
     height: 200vh;
   }
 
+ 
+
   .row {
     display: block;
   }
 
   .col1 img {
-    width: 50%;
+    width: 70%;
     margin-left: 25%;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    filter: brightness(80%);
   }
 
   .col2 {
@@ -859,19 +883,19 @@ form .btn2:hover {
     width: 720px;
     height: 405px;
     margin-left: 15%;
-    margin-top: 4%;
+    margin-top: 2%;
     border-radius: 1rem;
   }
 
   /* -------------------faqs----------------------- */
   #page3 {
-    margin-top: 20%;
-    height: 95vh;
+    margin-top: 5%;
+    height: auto;
     text-align: center;
   }
 
   #page3 h1 {
-    padding-top: 12%;
+    padding-top: 32%;
   }
 
   .accordian {
@@ -942,7 +966,7 @@ form .btn2:hover {
 @media only screen and (max-width: 800px) {
   /* -----------------navbar---------------------- */
   .nav-links {
-    margin-right: -15%;
+    margin-right: 0%;
   }
 
   .nav-links ul {
@@ -951,6 +975,7 @@ form .btn2:hover {
 
   .login {
     margin-right: -1.5rem;
+    display: flex;
   }
 
   /* -----------------home---------------------- */
@@ -989,7 +1014,7 @@ form .btn2:hover {
 
   /* -------------------faqs----------------------- */
   #page3 {
-    margin-top: 0%;
+    margin-top: 1%;
     padding-top: 1%;
     height: 90%;
     text-align: center;
@@ -1043,7 +1068,7 @@ form .btn2:hover {
     margin-bottom: 2rem;
   }
 
-  .modal2 .login {
+  .modal2 {
     margin-left: 20%;
   }
 
@@ -1080,3 +1105,39 @@ form .btn2:hover {
     border-radius: 1rem;
   }
 }
+
+@media only screen and (max-width: 1024px) {
+  .logo {
+    margin-top: 6%; /* Adjust the value accordingly */
+    margin-left: 18%;
+  }
+
+  #page2 {
+    padding: 10vh 0 0 0;
+    height: 150%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .logo {
+    width: 100%;
+    margin-top: 6%;
+    margin-left: 0%;
+    padding-left: 16%;
+  }
+
+  #page2 {
+    padding: 11% 0 0 0;
+    height: 150%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    width: 120%;
+    margin: 0;
+    padding-top: 8%;
+    padding-left: 0%;
+  }
+}
+
